@@ -23,7 +23,7 @@ function startCountdown() {
     clearInterval(countdownInterval);
   }
 
-  pauseText.textContent = "PAUSE"; // Stelle sicher, dass "PAUSE" angezeigt wird, wenn der Countdown läuft
+  pauseText.textContent = "BREAK"; // Stelle sicher, dass "PAUSE" angezeigt wird, wenn der Countdown läuft
   pauseText.style.display = "block";
   controlButtons.style.display = "flex"; // Kontroll-Buttons sichtbar machen
   speedControl.style.display = "block"; // Schieberegler sichtbar machen
