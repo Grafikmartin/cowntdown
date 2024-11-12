@@ -23,7 +23,7 @@ function startCountdown() {
     clearInterval(countdownInterval);
   }
 
-  pauseText.textContent = "BREAK"; // Stelle sicher, dass "PAUSE" angezeigt wird, wenn der Countdown läuft
+  pauseText.textContent = "BREAK"; // Zeigt "BREAK", wenn der Countdown läuft
   pauseText.style.display = "block";
   controlButtons.style.display = "flex"; // Kontroll-Buttons sichtbar machen
   speedControl.style.display = "block"; // Schieberegler sichtbar machen
@@ -58,9 +58,15 @@ function updateCountdown() {
     clearInterval(countdownInterval);
     document.getElementById("countdownDisplay").textContent = "00:00:00";
     
-    // Ändere den Text zu "Weiter geht's!" und halte die Bewegung an
+    // Ändere den Text zu "Let's continue!" und halte die Bewegung an
     pauseText.textContent = "Let's continue!";
     isMoving = false; // Bewegung anhalten
+
+    // Positionierung und Sichtbarkeit von "Let's continue!"
+    pauseText.style.top = "20vh";  // 20vh vom oberen Rand
+    pauseText.style.left = "50%";  // Zentriert
+    pauseText.style.transform = "translateX(-50%)"; // Korrektur zur Zentrierung
+    pauseText.style.display = "block"; // Sichtbar machen
 
     controlButtons.style.display = "none"; // Kontroll-Buttons verstecken
     speedControl.style.display = "none"; // Schieberegler verstecken
@@ -89,7 +95,7 @@ function stopCountdown() {
   speedControl.style.display = "none"; // Schieberegler verstecken
 }
 
-// Ping-Pong-Animation für "PAUSE"
+// Ping-Pong-Animation für "BREAK"
 const pauseText = document.getElementById("pauseText");
 
 let posX = 50;
