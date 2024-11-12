@@ -102,7 +102,7 @@ button:hover {
 }
 
 .control-buttons i:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #ffd700;
 }
 .speed-control {
