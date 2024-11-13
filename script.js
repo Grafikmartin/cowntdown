@@ -70,7 +70,7 @@ function updateCountdown() {
 
     controlButtons.style.display = "none"; // Kontroll-Buttons verstecken
     speedControl.style.display = "none"; // Schieberegler verstecken
-    alert("Countdown beendet!");
+    // alert("Countdown beendet!"); // Entferne die alert()-Funktion
   }
 
   timeLeft -= 1000;

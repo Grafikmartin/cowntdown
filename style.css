@@ -80,12 +80,12 @@ button:hover {
 
 #pauseText {
   position: absolute;
-  font-size: 90px;
+  font-size: 108px;
   font-weight: bold;
   color: white;
   user-select: none;
   display: none;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
 }
 .control-buttons {
   margin-top: 20px;
